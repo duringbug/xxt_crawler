@@ -5,7 +5,7 @@
  * @LastEditors: ${author}
  * @LastEditTime: 2023-09-13 12:01:11
 -->
-# xxt_crawler
+# xxt_crawler(项目停滞:ip被官方封了)
 
 ## ts的环境搭建
 要开始一个 TypeScript 项目，您可以使用 npm（Node.js 包管理器）来初始化项目并配置 TypeScript。以下是一些基本步骤：
