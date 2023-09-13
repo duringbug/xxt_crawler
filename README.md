@@ -3,7 +3,7 @@
  * @Author: 唐健峰
  * @Date: 2023-09-13 09:08:21
  * @LastEditors: ${author}
- * @LastEditTime: 2023-09-13 09:24:43
+ * @LastEditTime: 2023-09-13 12:01:11
 -->
 # xxt_crawler
 
@@ -24,7 +24,7 @@ npm init -y
 安装 TypeScript： 接下来，安装 TypeScript 作为项目的开发依赖。运行以下命令：
 
 ```bash
-npm install typescript --save-dev
+npm install typescript ts-loader --save-dev
 ```
 这将在项目中安装 TypeScript。
 
@@ -86,6 +86,14 @@ npx jest
 
 安装打包工具： 根据您选择的打包工具，使用 npm 或 yarn 安装相应的打包工具和插件。
 
+```bash
+npm install webpack webpack-cli --save-dev
+```
+
+```bash
+npm install --save-dev @types/lodash
+```
+
 创建配置文件： 针对您的项目，创建一个相应的打包配置文件。例如，对于 webpack，您可以创建一个 webpack.config.js 文件。
 
 配置打包： 在配置文件中配置打包选项，包括输入文件、输出目录、加载器（Loader）、插件（Plugin）等。
@@ -94,6 +102,13 @@ npx jest
 
 ```bash
 npx webpack
+```
+在package.json里添加
+```json
+  "scripts": {
+    "test": "npx jest",
+    "build": "npx webpack"
+  },
 ```
 这将根据您的配置文件将 TypeScript 代码打包成可部署的 JavaScript 文件。
 
